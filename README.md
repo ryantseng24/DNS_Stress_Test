@@ -67,6 +67,15 @@ sudo python3 dns_load_test_v1.0_final.py <目標DNS服務器IP>
 
 # 範例
 sudo python3 dns_load_test_v1.0_final.py 10.8.38.41
+
+# 快速覆蓋總QPS（不修改設定檔）
+sudo python3 dns_load_test_v1.0_final.py 10.8.38.41 --qps 50000
+
+# 使用不同的設定檔
+sudo python3 dns_load_test_v1.0_final.py 10.8.38.41 --config my_custom.json
+
+# 查看所有參數
+python3 dns_load_test_v1.0_final.py --help
 ```
 
 ### 5. 停止測試
